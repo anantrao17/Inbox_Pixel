@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>InboxPixel</title>
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body class="light-theme">
+  <header class="header">
+    <div class="logo">
+      <a href="header.html"><img src="./logo with text2.svg" alt="Logo" loading="lazy"></a>
+    </div>
+    <nav class="nav-links-container">
+      <div class="nav-links">
+        <a href="#Home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Let's talk</a>
+      </div>
+    </nav>
+    <div class="header-buttons">
+      <button class="toggle-theme" onclick="toggleTheme()">🌙</button>
+      <button class="book-call" onclick="navigateToContact()">Book a call</button>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main>
+    <div class="animated-background"></div>
+    <div class="center-message" id="Home">
+      <h1 id="dynamicMessage">Welcome to Inbox Pixel</h1>
+    </div>
+
+    <!-- Spacer to create distinct sections -->
+    <!-- <div class="spacer"></div> -->
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <p class="services-description">
+        At InboxPixel, we’re dedicated to bringing your brand to life. Whether it’s striking visuals, a responsive
+        website, or impactful marketing strategies, our mission is to surpass your expectations and transform your
+        vision into reality with creativity and expertise.
+      </p>
+      <div class="service-card-container">
+        <div class="service-row">
+          <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Web Development</h3>
+            <div class="underline"></div>
+            <p>Creating responsive and functional websites for businesses and individuals.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <div class="underline"></div>
+            <p>Designing intuitive and engaging user interfaces to enhance user experience.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🖌️</div>
+            <h3>Graphic Design</h3>
+            <div class="underline"></div>
+            <p>Crafting visuals, logos, and branding materials to strengthen brand identity.</p>
+          </div>
+        </div>
+        <div class="service-row">
+          <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>SEO Optimization</h3>
+            <div class="underline"></div>
+            <p>Improving website visibility and traffic through effective SEO strategies.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">✍️</div>
+            <h3>Content Creation</h3>
+            <div class="underline"></div>
+            <p>Producing high-quality content tailored to your brand’s audience and goals.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>App Development</h3>
+            <div class="underline"></div>
+            <p>Building user-friendly mobile and web apps for various platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits-section" id="benefits">
+      <h2>What Makes Us Different</h2>
+      <div class="grid-container">
+        <div class="scroll-item first">
+          <img src="icon1.png" alt="Icon 1" class="icon">
+          <h3>Quality</h3>
+          <p>We ensure top-quality service for every customer with a commitment to excellence.</p>
+        </div>
+        <div class="scroll-item">
+          <img src="icon2.png" alt="Icon 2" class="icon">
+          <h3>Innovation</h3>
+          <p>We continuously innovate to bring the best and most efficient solutions to our clients.</p>
+        </div>
+        <div class="scroll-item">
+          <img src="icon3.png" alt="Icon 3" class="icon">
+          <h3>Customer Focus</h3>
+          <p>Our customers are our priority, and we are dedicated to providing outstanding support.</p>
+        </div>
+        <div class="scroll-item last">
+          <img src="icon4.png" alt="Icon 4" class="icon">
+          <h3>Reliability</h3>
+          <p>We provide reliable solutions you can trust, ensuring consistency and dependability.</p>
+        </div>
+      </div>
+    </section>
+    <div class="InboxPixel-section-container" id="portfolio">
+      <section class="InboxPixel-section">
+        <!-- Text Content -->
+        <div class="text-content">
+          <h1 class="title" id="project-title">InboxPixel</h1>
+          <p class="description" id="project-description">
+              InboxPixel, a design and development agency, transforms ideas into stunning digital experiences.
+              The talented team creates sleek websites and powerful apps with meticulous attention to detail.
+              Known for capturing the essence of brands, has earned a reputation for quality and creativity.
+              Today, they continue to innovate and push the boundaries of design and development.
+          </p>
+          <div class="tags" id="project-tags">
+            <span class="tag">Website</span>
+            <span class="tag">Development</span>
+            <span class="tag">Branding</span>
+          </div>
+          <div class="button-maingroup">
+            <div class="button-group">
+              <button class="view-project" id="view-project-btn">View Project</button>
+            </div>
+  
+            <div class="nav-buttons">
+              <div class="prev-project">
+                <button id="prev-project-btn">&larr; Previous Project</button>
+              </div>
+              <div class="next-project">
+                <button id="next-project-btn">Next Project &rarr;</button>
+              </div>
+            </div>
+          </div>
+  
+  
+    <!-- Gallery Images (Separate but below text) -->
+        <div class="gallery-images">
+          <img src="image1.jpg" alt="Gallery Image 1">
+          <img src="image2.jpg" alt="Gallery Image 2">
+          <img src="image3.jpg" alt="Gallery Image 3">
+        </div>
+      </div>
+  
+      <div class="main-image">
+        <img src="pngtree-building-website-project-as-programming-homepage-process-tiny-person-vector-illustration-png-image_4658684.png" alt="Main Project Image" id="main-image">
+      </div>
+    </section>
+  </div>
+    
+    <section class="contact animated-background-contact" id="contact">
+      <a href="contact.html" class="contact-link">
+        <h1>Let's Create<br>Magic Together</h1>
+      </a>
+    </section>
+
+    <!-- Separate Gallery Images Section -->
+  </main>
+  <div class="footer-sec">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="left-content">
+        <p>Your brand deserves the best. <br>Work with us and see the difference.</p>
+        <p class="signature">Best regards,<br>InboxPixel ©</p>
+      </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Let’s talk</a></li>
+      </ul>
+      <p class="email">
+        E-mail<br>
+        <a href="mailto:info@InboxPixel.net">info@InboxPixel.net</a>
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <h2>Reach out<br>to us anytime</h2>
+      <div class="email-form">
+        <input type="email" placeholder="Your email">
+        <button>&rarr;</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="footer-bottom">
+    <h2 class="footer-social">Footer Social</h2>
+    <div class="footer-social">
+        <a href="#"><img alt="X" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0xMC4wNTMsNy45ODhsNS42MzEsOC4wMjRoLTEuNDk3TDguNTY2LDcuOTg4SDEwLjA1M3ogTTIxLDZ2MTIJYzAsMS42NTctMS4zNDMsMy0zLDNINmMtMS42NTcsMC0zLTEuMzQzLTMtM1Y2YzAtMS42NTcsMS4zNDMtMywzLTNoMTJDMTkuNjU3LDMsMjEsNC4zNDMsMjEsNnogTTE3LjUzOCwxN2wtNC4xODYtNS45OUwxNi43NzQsNwloLTEuMzExbC0yLjcwNCwzLjE2TDEwLjU1Miw3SDYuNzAybDMuOTQxLDUuNjMzTDYuOTA2LDE3aDEuMzMzbDMuMDAxLTMuNTE2TDEzLjY5OCwxN0gxNy41Mzh6Ii8+PC9zdmc+"/></a>
+        <a href="#"><img alt="Instagram" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg=="/></a>
+        <a href="#"><img alt="FaceBook" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTksM0g1QzMuODk1LDMsMywzLjg5NSwzLDV2MTRjMCwxLjEwNSwwLjg5NSwyLDIsMmg3LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTljMS4xMDUsMCwyLTAuODk1LDItMlY1QzIxLDMuODk1LDIwLjEwNSwzLDE5LDN6Ii8+PC9zdmc+"/></a>
+        <a href="#"><img alt="LinkedIn" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTksM0g1QzMuODk1LDMsMywzLjg5NSwzLDV2MTRjMCwxLjEwNSwwLjg5NSwyLDIsMmgxNGMxLjEwNSwwLDItMC44OTUsMi0yVjVDMjEsMy44OTUsMjAuMTA1LDMsMTksM3ogTTksMTdINi40Nzd2LTdIOSBWMTd6IE03LjY5NCw4LjcxN2MtMC43NzEsMC0xLjI4Ni0wLjUxNC0xLjI4Ni0xLjJzMC41MTQtMS4yLDEuMzcxLTEuMmMwLjc3MSwwLDEuMjg2LDAuNTE0LDEuMjg2LDEuMlM4LjU1MSw4LjcxNyw3LjY5NCw4LjcxN3ogTTE4LDE3aC0yLjQ0MnYtMy44MjZjMC0xLjA1OC0wLjY1MS0xLjMwMi0wLjg5NS0xLjMwMnMtMS4wNTgsMC4xNjMtMS4wNTgsMS4zMDJjMCwwLjE2MywwLDMuODI2LDAsMy44MjZoLTIuNTIzdi03aDIuNTIzdjAuOTc3IEMxMy45MywxMC40MDcsMTQuNTgxLDEwLDE1LjgwMiwxMEMxNy4wMjMsMTAsMTgsMTAuOTc3LDE4LDEzLjE3NFYxN3oiLz48L3N2Zz4="/></a>
+        <a href="#"><img alt="Behance" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gNSAzIEMgMy44OTg0MzggMyAzIDMuODk4NDM4IDMgNSBMIDMgMTkgQyAzIDIwLjEwMTU2MyAzLjg5ODQzOCAyMSA1IDIxIEwgMTkgMjEgQyAyMC4xMDE1NjMgMjEgMjEgMjAuMTAxNTYzIDIxIDE5IEwgMjEgNSBDIDIxIDMuODk4NDM4IDIwLjEwMTU2MyAzIDE5IDMgWiBNIDYuNDA2MjUgNy42ODc1IEwgOSA3LjY4NzUgQyAxMS4zMDA3ODEgNy42ODc1IDExLjY4NzUgOS4xMDE1NjMgMTEuNjg3NSAxMCBDIDExLjY4NzUgMTEuMzAwNzgxIDEwLjc5Mjk2OSAxMS43MTA5MzggMTAuNTkzNzUgMTEuODEyNSBDIDEwLjc5Mjk2OSAxMS45MTQwNjMgMTEuODEyNSAxMi4xODc1IDExLjgxMjUgMTMuNjg3NSBDIDExLjkxNDA2MyAxNS40ODgyODEgMTAuNzg5MDYzIDE2LjE4NzUgOS4xODc1IDE2LjE4NzUgTCA2LjQwNjI1IDE2LjE4NzUgWiBNIDEzLjQwNjI1IDcuNjg3NSBMIDE3LjA5Mzc1IDcuNjg3NSBMIDE3LjA5Mzc1IDguNjg3NSBMIDEzLjQwNjI1IDguNjg3NSBaIE0gOC4wOTM3NSA5LjA5Mzc1IEwgOC4wOTM3NSAxMS4xODc1IEwgOSAxMS4xODc1IEMgOS42MDE1NjMgMTEuMTg3NSAxMCAxMC45ODgyODEgMTAgMTAuMTg3NSBDIDEwIDkuNDg4MjgxIDkuNjk5MjE5IDkuMDkzNzUgOSA5LjA5Mzc1IFogTSAxNS41OTM3NSA5LjgxMjUgQyAxNi45OTIxODggOS44MTI1IDE4IDEwLjYwNTQ2OSAxOCAxMi45MDYyNSBMIDE4IDEzLjU5Mzc1IEwgMTQuNTkzNzUgMTMuNTkzNzUgQyAxNC41OTM3NSAxMy44OTQ1MzEgMTQuNjEzMjgxIDE1IDE1LjgxMjUgMTUgQyAxNi42MTMyODEgMTUgMTYuOTg4MjgxIDE0LjYwNTQ2OSAxNy4xODc1IDE0LjQwNjI1IEwgMTcuOTA2MjUgMTUuNDA2MjUgQyAxNy44MDQ2ODggMTUuNTA3ODEzIDE3LjExMzI4MSAxNi4zMTI1IDE1LjgxMjUgMTYuMzEyNSBDIDE0LjMxMjUgMTYuMzEyNSAxMy4wOTM3NSAxNS41MDc4MTMgMTMuMDkzNzUgMTMuNDA2MjUgTCAxMy4wOTM3NSAxMi45MDYyNSBDIDEzLjA5Mzc1IDEwLjYwNTQ2OSAxNC4yOTI5NjkgOS44MTI1IDE1LjU5Mzc1IDkuODEyNSBaIE0gMTUuNDA2MjUgMTEuMDkzNzUgQyAxNS4xMDU0NjkgMTEuMDkzNzUgMTQuNSAxMS4yMDcwMzEgMTQuNSAxMi40MDYyNSBMIDE2LjE4NzUgMTIuNDA2MjUgQyAxNi4xODc1IDEyLjQwNjI1IDE2LjQwNjI1IDExLjA5Mzc1IDE1LjQwNjI1IDExLjA5Mzc1IFogTSA4LjA5Mzc1IDEyLjUgTCA4LjA5Mzc1IDE0LjgxMjUgTCA5LjE4NzUgMTQuODEyNSBDIDkuNzg5MDYzIDE0LjgxMjUgMTAuMDkzNzUgMTQuMzg2NzE5IDEwLjA5Mzc1IDEzLjY4NzUgQyAxMC4xOTUzMTMgMTIuODg2NzE5IDkuOTE0MDYzIDEyLjUgOS4zMTI1IDEyLjUgWiIvPjwvc3ZnPg=="/></a>
+        <a href="#"><img alt="Dribbble" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gNCAyIEMgMi44OTg0MzggMiAyIDIuODk4NDM4IDIgNCBMIDIgMjAgQyAyIDIxLjEwMTU2MyAyLjg5ODQzOCAyMiA0IDIyIEwgMjAgMjIgQyAyMS4xMDE1NjMgMjIgMjIgMjEuMTAxNTYzIDIyIDIwIEwgMjIgNCBDIDIyIDIuODk4NDM4IDIxLjEwMTU2MyAyIDIwIDIgWiBNIDEyLjI1IDQgQyAxMy4yNTc4MTMgNCAxNC40Njg3NSA0Ljk4MDQ2OSAxNC40Njg3NSA5LjY1NjI1IEMgMTQuNDY4NzUgMTEuMzI4MTI1IDEzLjk4MDQ2OSAxMy44MTY0MDYgMTMuMDMxMjUgMTUuODEyNSBDIDEzLjQ0NTMxMyAxNi4zNzUgMTMuODM5ODQ0IDE2LjYyNSAxNC4xMjUgMTYuNjI1IEMgMTQuNTExNzE5IDE2LjU0Njg3NSAxNS4zNzg5MDYgMTUuMDAzOTA2IDE1Ljg0Mzc1IDEzLjUzMTI1IEMgMTUuOTcyNjU2IDEzLjEyNSAxNi4zODY3MTkgMTIuOTAyMzQ0IDE2Ljc4MTI1IDEzLjAzMTI1IEMgMTcuMTgzNTk0IDEzLjE0ODQzOCAxNy4zOTg0MzggMTMuNjA1NDY5IDE3LjI4MTI1IDE0IEMgMTYuODg2NzE5IDE1LjI1MzkwNiAxNS43ODUxNTYgMTguMTU2MjUgMTQuMTI1IDE4LjE1NjI1IEMgMTMuNjAxNTYzIDE4LjE1NjI1IDEyLjkyMTg3NSAxNy45MDIzNDQgMTIuMjUgMTcuMjE4NzUgQyAxMS40ODgyODEgMTguMjg1MTU2IDEwLjUyMzQzOCAxOSA5LjQwNjI1IDE5IEMgNy4wNDI5NjkgMTkgNiAxNi44NDc2NTYgNiAxNSBDIDYgMTMuMDM1MTU2IDcuMDAzOTA2IDExLjE4NzUgOS4xODc1IDExLjE4NzUgQyA5LjU1NDY4OCAxMS4xODc1IDkuODkwNjI1IDExLjI2NTYyNSAxMC4xODc1IDExLjM3NSBDIDEwLjE0ODQzOCAxMC44MTI1IDEwLjEyNSAxMC4yMDMxMjUgMTAuMTI1IDkuNTYyNSBDIDEwLjEyNSA5LjUwMzkwNiAxMC4xMjUgNCAxMi4yNSA0IFogTSAxMi4zMTI1IDUuNjI1IEMgMTEuOTk2MDk0IDYuMTc5Njg4IDExLjYyNSA3LjgyNDIxOSAxMS42MjUgOS41NjI1IEMgMTEuNjI1IDExLjQ0MTQwNiAxMS44Mzk4NDQgMTIuODkwNjI1IDEyLjE1NjI1IDEzLjk2ODc1IEMgMTIuNjQwNjI1IDEyLjU4NTkzOCAxMi45Njg3NSAxMS4wMDc4MTMgMTIuOTY4NzUgOS42NTYyNSBDIDEyLjk2ODc1IDcuMTA1NDY5IDEyLjU1MDc4MSA1Ljk4MDQ2OSAxMi4zMTI1IDUuNjI1IFogTSA4LjkwNjI1IDEyLjcxODc1IEMgNy41NTQ2ODggMTIuOTg4MjgxIDcuNTMxMjUgMTUuMTc5Njg4IDcuNTMxMjUgMTUuMjgxMjUgQyA3LjUzMTI1IDE1Ljk0MTQwNiA3LjY5NTMxMyAxNy40Njg3NSA5LjQwNjI1IDE3LjQ2ODc1IEMgMTAuMDY2NDA2IDE3LjQ2ODc1IDEwLjczODI4MSAxNi44NDM3NSAxMS4zMTI1IDE1Ljg3NSBDIDEwLjk2NDg0NCAxNS4yMDMxMjUgMTAuNjQ0NTMxIDE0LjM3MTA5NCAxMC40Mzc1IDEzLjMxMjUgQyAxMC4zODY3MTkgMTMuMjgxMjUgMTAuMzQzNzUgMTMuMjI2NTYzIDEwLjMxMjUgMTMuMTg3NSBDIDEwLjMxMjUgMTMuMTg3NSA5LjgyODEyNSAxMi43MTg3NSA5LjE4NzUgMTIuNzE4NzUgQyA5LjA4NTkzOCAxMi43MTg3NSA4Ljk5NjA5NCAxMi42OTkyMTkgOC45MDYyNSAxMi43MTg3NSBaIi8+PC9zdmc+"/></a>
+    </div>
+    <div class="footer-contact">
+        <a href="#"><img alt="Telegram" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gMjAuMzAyNzM0IDIuOTg0Mzc1IEMgMjAuMDEzNzY5IDIuOTk2OTQ1IDE5Ljc0ODU4MyAzLjA4MDA1NSAxOS41MTU2MjUgMy4xNzE4NzUgQyAxOS4zMDA0MDcgMy4yNTY2MzQgMTguNTI3NTQgMy41ODE0NzI2IDE3LjI5Njg3NSA0LjA5NzY1NjIgQyAxNi4wNjYyMSA0LjYxMzg0IDE0LjQzNTQ3NiA1LjI5ODIzNDggMTIuNjk3MjY2IDYuMDI5Mjk2OSBDIDkuMjIwODQ0OSA3LjQ5MTQyMTEgNS4zMTQyMzggOS4xMzYxMjU5IDMuMzEyNSA5Ljk3ODUxNTYgQyAzLjI0Mzc1OSAxMC4wMDcxNTYgMi45NjQ1ODUyIDEwLjA5MjYyMSAyLjY1NjI1IDEwLjMyODEyNSBDIDIuMzQ3MTk5NiAxMC41NjQxNzYgMi4wMDM5MDYyIDExLjA3NjQ2MiAyLjAwMzkwNjIgMTEuNjM2NzE5IEMgMi4wMDM5MDYyIDEyLjA4ODY3MSAyLjIyOTUyMDEgMTIuNTQ4OTY2IDIuNTAxOTUzMSAxMi44MTI1IEMgMi43NzQzODYxIDEzLjA3NjAzNCAzLjA1MDQ5MDMgMTMuMTk5MjQ0IDMuMjgxMjUgMTMuMjkxMDE2IEwgMy4yODEyNSAxMy4yODkwNjIgQyA0LjA2MTI3NzYgMTMuNTk5ODI3IDYuMzkwNjkzOSAxNC41MzE5MzggNi45NDUzMTI1IDE0Ljc1MzkwNiBDIDcuMTQyMDQyMyAxNS4zNDM0MzMgNy45ODY1ODk1IDE3Ljg2NzI3OCA4LjE4NzUgMTguNTAxOTUzIEwgOC4xODU1NDY5IDE4LjUwMTk1MyBDIDguMzI3NTU4OCAxOC45NTExNjIgOC40NjU5NzkxIDE5LjI0MzkxMyA4LjY1ODIwMzEgMTkuNDg4MjgxIEMgOC43NTQzMTUxIDE5LjYxMDQ2NSA4Ljg2OTAzOTggMTkuNzIxMTg0IDkuMDA5NzY1NiAxOS44MDg1OTQgQyA5LjA2Mzc1OTYgMTkuODQyMTM0IDkuMTIzNTQ1NCAxOS44NjgxNDggOS4xODM1OTM4IDE5Ljg5MjU3OCBDIDkuMTkxOTYyIDE5Ljg5NjEzMSA5LjIwMDU4NjcgMTkuODk3MDEyIDkuMjA4OTg0NCAxOS45MDAzOTEgTCA5LjE4NTU0NjkgMTkuODk0NTMxIEMgOS4yMDI5NTc5IDE5LjkwMTUzMSA5LjIxODU4NDEgMTkuOTExODU5IDkuMjM2MzI4MSAxOS45MTc5NjkgQyA5LjI2NTI0MjcgMTkuOTI3OTI2IDkuMjg1Mjg3MyAxOS45Mjc1OTkgOS4zMjQyMTg4IDE5LjkzNTU0NyBDIDkuNDYxMjIzMyAxOS45Nzc2OTQgOS41OTc5Nzk0IDIwLjAwNTg1OSA5LjcyNDYwOTQgMjAuMDA1ODU5IEMgMTAuMjY4MjIgMjAuMDA1ODU5IDEwLjYwMTU2MiAxOS43MTA5MzcgMTAuNjAxNTYyIDE5LjcxMDkzOCBMIDEwLjYyMzA0NyAxOS42OTUzMTIgTCAxMi45NzA3MDMgMTcuNzA4OTg0IEwgMTUuODQ1NzAzIDIwLjM2OTE0MSBDIDE1Ljg5ODIxNyAyMC40NDMyODkgMTYuMzA5NjA0IDIxIDE3LjI2MTcxOSAyMSBDIDE3LjgyOTg0NCAyMSAxOC4yNzkwMjUgMjAuNzE4NzkxIDE4LjU2NjQwNiAyMC40MjM4MjggQyAxOC44NTM3ODcgMjAuMTI4ODY2IDE5LjAzMjgwNCAxOS44MjcwNiAxOS4xMTMyODEgMTkuNDE3OTY5IEwgMTkuMTE1MjM0IDE5LjQxNjAxNiBDIDE5LjE3OTQxNCAxOS4wODU4MzQgMjEuOTMxNjQxIDUuMjY1NjI1IDIxLjkzMTY0MSA1LjI2NTYyNSBMIDIxLjkyNTc4MSA1LjI4OTA2MjUgQyAyMi4wMTE0NDEgNC45MDY3MTcxIDIyLjAzNjczNSA0LjUzNjk2MzEgMjEuOTM1NTQ3IDQuMTYwMTU2MiBDIDIxLjgzNDM1OCAzLjc4MzM0OTUgMjEuNTYxMjcxIDMuNDE1NjI1MiAyMS4yMzI0MjIgMy4yMjI2NTYyIEMgMjAuOTAzNTcyIDMuMDI5Njg3NCAyMC41OTE2OTkgMi45NzE4MDQ2IDIwLjMwMjczNCAyLjk4NDM3NSB6IE0gMTkuOTA4MjAzIDUuMTczODI4MSBDIDE5Ljc5OTQ0MiA1LjcxOTg1NzYgMTcuMzM0MDEgMTguMTA1ODc3IDE3LjE4MTY0MSAxOC44ODI4MTIgTCAxMy4wMjkyOTcgMTUuMDQxMDE2IEwgMTAuMjIyNjU2IDE3LjQxNDA2MiBMIDExIDE0LjM3NSBDIDExIDE0LjM3NSAxNi4zNjI1NDcgOC45NDY4NTk0IDE2LjY4NTU0NyA4LjYzMDg1OTQgQyAxNi45NDU1NDcgOC4zNzc4NTk0IDE3IDguMjg5MTcxOSAxNyA4LjIwMTE3MTkgQyAxNyA4LjA4NDE3MTkgMTYuOTM5NzgxIDggMTYuODAwNzgxIDggQyAxNi42NzU3ODEgOCAxNi41MDYwMTYgOC4xMTk3ODEyIDE2LjQxNjAxNiA4LjE3NTc4MTIgQyAxNS4yNzIzNjggOC44ODg3ODU0IDEwLjQwMTI4MyAxMS42NjQ2ODUgOC4wMDU4NTk0IDEzLjAyNzM0NCBDIDcuODYxNzAxNiAxMi45Njk1NCA1LjY5NzM5NjIgMTIuMTAwNDU4IDQuNTMxMjUgMTEuNjM0NzY2IEMgNi42MDU1MTQ2IDEwLjc2MTc3IDEwLjE2MTE1NiA5LjI2NTgwODMgMTMuNDcyNjU2IDcuODczMDQ2OSBDIDE1LjIxMDU3MSA3LjE0MjEwOSAxNi44NDA4MjIgNi40NTcwOTc3IDE4LjA3MDMxMiA1Ljk0MTQwNjIgQyAxOS4xMDgxNTggNS41MDYwOTc3IDE5LjY0OTUzOCA1LjI4MDcwMzUgMTkuOTA4MjAzIDUuMTczODI4MSB6IE0gMTcuMTUyMzQ0IDE5LjAyNTM5MSBDIDE3LjE1MjM0NCAxOS4wMjUzOTEgMTcuMTU0Mjk3IDE5LjAyNTM5MSAxNy4xNTQyOTcgMTkuMDI1MzkxIEMgMTcuMTU0MjUyIDE5LjAyNTYyMSAxNy4xNTI0NDQgMTkuMDMwOTUgMTcuMTUyMzQ0IDE5LjAzMTI1IEMgMTcuMTUzNjE1IDE5LjAyNDc4OSAxNy4xNTEzOSAxOS4wMzA0NSAxNy4xNTIzNDQgMTkuMDI1MzkxIHoiLz48L3N2Zz4="/></a>
+        <a href="#"><img alt="WhatsApp" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTkuMDc3LDQuOTI4QzE3LjE5MSwzLjA0MSwxNC42ODMsMi4wMDEsMTIuMDExLDJjLTUuNTA2LDAtOS45ODcsNC40NzktOS45ODksOS45ODUgYy0wLjAwMSwxLjc2LDAuNDU5LDMuNDc4LDEuMzMzLDQuOTkyTDIsMjJsNS4yMzMtMS4yMzdjMS40NTksMC43OTYsMy4xMDEsMS4yMTUsNC43NzMsMS4yMTZoMC4wMDQgYzUuNTA1LDAsOS45ODYtNC40OCw5Ljk4OS05Ljk4NUMyMi4wMDEsOS4zMjUsMjAuOTYzLDYuODE2LDE5LjA3Nyw0LjkyOHogTTE2Ljg5OCwxNS41NTRjLTAuMjA4LDAuNTgzLTEuMjI3LDEuMTQ1LTEuNjg1LDEuMTg2IGMtMC40NTgsMC4wNDItMC44ODcsMC4yMDctMi45OTUtMC42MjRjLTIuNTM3LTEtNC4xMzktMy42MDEtNC4yNjMtMy43NjdjLTAuMTI1LTAuMTY3LTEuMDE5LTEuMzUzLTEuMDE5LTIuNTgxIFM3LjU4MSw3LjkzNiw3LjgxLDcuNjg3YzAuMjI5LTAuMjUsMC40OTktMC4zMTIsMC42NjYtMC4zMTJjMC4xNjYsMCwwLjMzMywwLDAuNDc4LDAuMDA2YzAuMTc4LDAuMDA3LDAuMzc1LDAuMDE2LDAuNTYyLDAuNDMxIGMwLjIyMiwwLjQ5NCwwLjcwNywxLjcyOCwwLjc2OSwxLjg1M3MwLjEwNCwwLjI3MSwwLjAyMSwwLjQzN3MtMC4xMjUsMC4yNy0wLjI0OSwwLjQxNmMtMC4xMjUsMC4xNDYtMC4yNjIsMC4zMjUtMC4zNzQsMC40MzcgYy0wLjEyNSwwLjEyNC0wLjI1NSwwLjI2LTAuMTEsMC41MDljMC4xNDYsMC4yNSwwLjY0NiwxLjA2NywxLjM4OCwxLjcyOGMwLjk1NCwwLjg1LDEuNzU3LDEuMTEzLDIuMDA3LDEuMjM5IGMwLjI1LDAuMTI1LDAuMzk1LDAuMTA0LDAuNTQxLTAuMDYzYzAuMTQ2LTAuMTY2LDAuNjI0LTAuNzI4LDAuNzktMC45NzhzMC4zMzMtMC4yMDgsMC41NjItMC4xMjVzMS40NTYsMC42ODcsMS43MDUsMC44MTIgYzAuMjUsMC4xMjUsMC40MTYsMC4xODcsMC40NzgsMC4yOTFDMTcuMTA2LDE0LjQ3MSwxNy4xMDYsMTQuOTcxLDE2Ljg5OCwxNS41NTR6Ii8+PC9zdmc+"/></a>
+        <a href="#"><img alt="Phone" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGQ9Ik0gMTQgMy45OTAyMzQ0IEMgOC40ODg2NjYxIDMuOTkwMjM0NCA0IDguNDc4OTAwOCA0IDEzLjk5MDIzNCBMIDQgMzUuOTkwMjM0IEMgNCA0MS41MDE1NjggOC40ODg2NjYxIDQ1Ljk5MDIzNCAxNCA0NS45OTAyMzQgTCAzNiA0NS45OTAyMzQgQyA0MS41MTEzMzQgNDUuOTkwMjM0IDQ2IDQxLjUwMTU2OCA0NiAzNS45OTAyMzQgTCA0NiAxMy45OTAyMzQgQyA0NiA4LjQ3ODkwMDggNDEuNTExMzM0IDMuOTkwMjM0NCAzNiAzLjk5MDIzNDQgTCAxNCAzLjk5MDIzNDQgeiBNIDE4LjAwNTg1OSAxMi4wMzMyMDMgQyAxOC42MzM4NTkgMTIuMDYwMjAzIDE5LjIxMDU5NCAxMi40MTQwMzEgMTkuNTU4NTk0IDEyLjk1NzAzMSBDIDE5Ljk1NDU5NCAxMy41NzUwMzEgMjAuNTY5MTQxIDE0LjUzNDE1NiAyMS4zNjkxNDEgMTUuNzg1MTU2IEMgMjIuMDk5MTQxIDE2LjkyNjE1NiAyMi4xNTAwNDcgMTguMzk5ODQ0IDIxLjQ5ODA0NyAxOS41ODk4NDQgTCAyMC4wMzMyMDMgMjEuNjczODI4IEMgMTkuNjM3MjAzIDIyLjIzNzgyOCAxOS41NTgyMTkgMjIuOTU5NzAzIDE5LjgyNDIxOSAyMy41OTU3MDMgQyAyMC4yMzgyMTkgMjQuNTg1NzAzIDIxLjA0MDc5NyAyNi4xMDcyMDMgMjIuNDY2Nzk3IDI3LjUzMzIwMyBDIDIzLjg5Mjc5NyAyOC45NTkyMDMgMjUuNDE0Mjk3IDI5Ljc2MTc4MSAyNi40MDQyOTcgMzAuMTc1NzgxIEMgMjcuMDQwMjk3IDMwLjQ0MTc4MSAyNy43NjIxNzIgMzAuMzYyNzk3IDI4LjMyNjE3MiAyOS45NjY3OTcgTCAzMC40MTAxNTYgMjguNTAxOTUzIEMgMzEuNjAwMTU2IDI3Ljg0OTk1MyAzMy4wNzM4NDQgMjcuOTAxODU5IDM0LjIxNDg0NCAyOC42MzA4NTkgQyAzNS40NjU4NDQgMjkuNDMwODU5IDM2LjQyNDk2OSAzMC4wNDU0MDYgMzcuMDQyOTY5IDMwLjQ0MTQwNiBDIDM3LjU4NTk2OSAzMC43ODk0MDYgMzcuOTM5Nzk3IDMxLjM2NjE0MSAzNy45NjY3OTcgMzEuOTk0MTQxIEMgMzguMTIwNzk3IDM1LjU1ODE0MSAzNS4zNTk2NDEgMzcuMDAxOTUzIDM0LjU1NjY0MSAzNy4wMDE5NTMgQyAzNC4wMDA2NDEgMzcuMDAxOTUzIDI3LjMxNjM0NCAzNy43NjE2NTYgMTkuNzc3MzQ0IDMwLjIyMjY1NiBDIDEyLjIzODM0NCAyMi42ODM2NTYgMTIuOTk4MDQ3IDE1Ljk5OTM1OSAxMi45OTgwNDcgMTUuNDQzMzU5IEMgMTIuOTk4MDQ3IDE0LjY0MDM1OSAxNC40NDE4NTkgMTEuODc5MjAzIDE4LjAwNTg1OSAxMi4wMzMyMDMgeiIvPjwvc3ZnPg=="/></a>
+        <a href="#"><img alt="Email" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8ElEQVR4nO2YTStFURSGH983kRQTpKSkJGUgE2XATzA1NLj5GMlf8BeMzfwDDGTiY3AjAxlISUoScVHysXVqnbqd9nb2ufdcZ8t+6x2dvdZ63/2xTi3w8PDw8PDQIwcsAofAM6B+mc9Se1G0JEI3cJSBaGVgoKXLVnwjcOyAaKUxEWiLxYIDYpWB8zYGDh0QqgzctzGw5YBQZeAmlphy7B2cAjMkRK0EXWQo/AqYA+qSCI8uDnrwMnD/i8LvpWa0/1sZMR1XO7AKvFZR+BuwBnT+cK1jUfriJzTfe6TIe4rCP4ENoE9TbwzYKVlrbSDkNjCsWTcoRSsVvw2MaPIPSP6vyPrEBpTs9prhdz4O7JYhPPjfTGrydcpVfTPElWUg5IskbzPc0RML4Wfyxmoi8S3ACvAUE1+RgZB3Uiynab2zwLUm5hZYAuojMQ3SKm8sa6diIOSloU83i8EHoCin1hpZE5xAcBLnCWumaiBkAZjW5OoQRjEtMaoMVsVAaUcZ/SH3UAqdKxaqQn6JyP6SnL3SxT5SyB8LlRKDNrguNLVE5bKBajEWWQtU3gDZ77LyV4g//IiLDohUBj7aGDhwQKgycO+vD7byNgaaHJuLKmHBdrTo4nC3kGS4G6JRZpF7GT3sotTOJ9l5Dw8PD4//hW9PcVQiDOoB9wAAAABJRU5ErkJggg=="></a>
+    </div>
+</div>
+<div class="footer-note">
+    <p>©2024 Inbox Pixel Creative Studio</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+</div> -->
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="social-section">
+      <h4>Follow us</h4>
+      <div class="social-icons">
+        <a href="https://x.com" target="_blank"><img alt="X" class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0xMC4wNTMsNy45ODhsNS42MzEsOC4wMjRoLTEuNDk3TDguNTY2LDcuOTg4SDEwLjA1M3ogTTIxLDZ2MTIJYzAsMS42NTctMS4zNDMsMy0zLDNINmMtMS42NTcsMC0zLTEuMzQzLTMtM1Y2YzAtMS42NTcsMS4zNDMtMywzLTNoMTJDMTkuNjU3LDMsMjEsNC4zNDMsMjEsNnogTTE3LjUzOCwxN2wtNC4xODYtNS45OUwxNi43NzQsNwloLTEuMzExbC0yLjcwNCwzLjE2TDEwLjU1Miw3SDYuNzAybDMuOTQxLDUuNjMzTDYuOTA2LDE3aDEuMzMzbDMuMDAxLTMuNTE2TDEzLjY5OCwxN0gxNy41Mzh6Ii8+PC9zdmc+"/></a>
+        <a href="https://instagram.com" target="_blank"><img alt="Instagram" class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNIDggMyBDIDUuMjM5IDMgMyA1LjIzOSAzIDggTCAzIDE2IEMgMyAxOC43NjEgNS4yMzkgMjEgOCAyMSBMIDE2IDIxIEMgMTguNzYxIDIxIDIxIDE4Ljc2MSAyMSAxNiBMIDIxIDggQyAyMSA1LjIzOSAxOC43NjEgMyAxNiAzIEwgOCAzIHogTSAxOCA1IEMgMTguNTUyIDUgMTkgNS40NDggMTkgNiBDIDE5IDYuNTUyIDE4LjU1MiA3IDE4IDcgQyAxNy40NDggNyAxNyA2LjU1MiAxNyA2IEMgMTcgNS40NDggMTcuNDQ4IDUgMTggNSB6IE0gMTIgNyBDIDE0Ljc2MSA3IDE3IDkuMjM5IDE3IDEyIEMgMTcgMTQuNzYxIDE0Ljc2MSAxNyAxMiAxNyBDIDkuMjM5IDE3IDcgMTQuNzYxIDcgMTIgQyA3IDkuMjM5IDkuMjM5IDcgMTIgNyB6IE0gMTIgOSBBIDMgMyAwIDAgMCA5IDEyIEEgMyAzIDAgMCAwIDEyIDE1IEEgMyAzIDAgMCAwIDE1IDEyIEEgMyAzIDAgMCAwIDEyIDkgeiIvPjwvc3ZnPg=="/></a>
+        <a href="https://facebook.com" target="_blank"><img alt="FaceBook" class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTksM0g1QzMuODk1LDMsMywzLjg5NSwzLDV2MTRjMCwxLjEwNSwwLjg5NSwyLDIsMmg3LjYyMXYtNi45NjFoLTIuMzQzdi0yLjcyNWgyLjM0M1Y5LjMwOSBjMC0yLjMyNCwxLjQyMS0zLjU5MSwzLjQ5NS0zLjU5MWMwLjY5OS0wLjAwMiwxLjM5NywwLjAzNCwyLjA5MiwwLjEwNXYyLjQzaC0xLjQyOGMtMS4xMywwLTEuMzUsMC41MzQtMS4zNSwxLjMyMnYxLjczNWgyLjcgbC0wLjM1MSwyLjcyNWgtMi4zNjVWMjFIMTljMS4xMDUsMCwyLTAuODk1LDItMlY1QzIxLDMuODk1LDIwLjEwNSwzLDE5LDN6Ii8+PC9zdmc+"/></a>
+        <a href="https://linkedin.com" target="_blank"><img alt="LinkedIn" class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTksM0g1QzMuODk1LDMsMywzLjg5NSwzLDV2MTRjMCwxLjEwNSwwLjg5NSwyLDIsMmgxNGMxLjEwNSwwLDItMC44OTUsMi0yVjVDMjEsMy44OTUsMjAuMTA1LDMsMTksM3ogTTksMTdINi40Nzd2LTdIOSBWMTd6IE03LjY5NCw4LjcxN2MtMC43NzEsMC0xLjI4Ni0wLjUxNC0xLjI4Ni0xLjJzMC41MTQtMS4yLDEuMzcxLTEuMmMwLjc3MSwwLDEuMjg2LDAuNTE0LDEuMjg2LDEuMlM4LjU1MSw4LjcxNyw3LjY5NCw4LjcxN3ogTTE4LDE3aC0yLjQ0MnYtMy44MjZjMC0xLjA1OC0wLjY1MS0xLjMwMi0wLjg5NS0xLjMwMnMtMS4wNTgsMC4xNjMtMS4wNTgsMS4zMDJjMCwwLjE2MywwLDMuODI2LDAsMy44MjZoLTIuNTIzdi03aDIuNTIzdjAuOTc3IEMxMy45MywxMC40MDcsMTQuNTgxLDEwLDE1LjgwMiwxMEMxNy4wMjMsMTAsMTgsMTAuOTc3LDE4LDEzLjE3NFYxN3oiLz48L3N2Zz4="/></a>
+        <a href="https://behance.net" target="_blank"><img alt="Behance" class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gNSAzIEMgMy44OTg0MzggMyAzIDMuODk4NDM4IDMgNSBMIDMgMTkgQyAzIDIwLjEwMTU2MyAzLjg5ODQzOCAyMSA1IDIxIEwgMTkgMjEgQyAyMC4xMDE1NjMgMjEgMjEgMjAuMTAxNTYzIDIxIDE5IEwgMjEgNSBDIDIxIDMuODk4NDM4IDIwLjEwMTU2MyAzIDE5IDMgWiBNIDYuNDA2MjUgNy42ODc1IEwgOSA3LjY4NzUgQyAxMS4zMDA3ODEgNy42ODc1IDExLjY4NzUgOS4xMDE1NjMgMTEuNjg3NSAxMCBDIDExLjY4NzUgMTEuMzAwNzgxIDEwLjc5Mjk2OSAxMS43MTA5MzggMTAuNTkzNzUgMTEuODEyNSBDIDEwLjc5Mjk2OSAxMS45MTQwNjMgMTEuODEyNSAxMi4xODc1IDExLjgxMjUgMTMuNjg3NSBDIDExLjkxNDA2MyAxNS40ODgyODEgMTAuNzg5MDYzIDE2LjE4NzUgOS4xODc1IDE2LjE4NzUgTCA2LjQwNjI1IDE2LjE4NzUgWiBNIDEzLjQwNjI1IDcuNjg3NSBMIDE3LjA5Mzc1IDcuNjg3NSBMIDE3LjA5Mzc1IDguNjg3NSBMIDEzLjQwNjI1IDguNjg3NSBaIE0gOC4wOTM3NSA5LjA5Mzc1IEwgOC4wOTM3NSAxMS4xODc1IEwgOSAxMS4xODc1IEMgOS42MDE1NjMgMTEuMTg3NSAxMCAxMC45ODgyODEgMTAgMTAuMTg3NSBDIDEwIDkuNDg4MjgxIDkuNjk5MjE5IDkuMDkzNzUgOSA5LjA5Mzc1IFogTSAxNS41OTM3NSA5LjgxMjUgQyAxNi45OTIxODggOS44MTI1IDE4IDEwLjYwNTQ2OSAxOCAxMi45MDYyNSBMIDE4IDEzLjU5Mzc1IEwgMTQuNTkzNzUgMTMuNTkzNzUgQyAxNC41OTM3NSAxMy44OTQ1MzEgMTQuNjEzMjgxIDE1IDE1LjgxMjUgMTUgQyAxNi42MTMyODEgMTUgMTYuOTg4MjgxIDE0LjYwNTQ2OSAxNy4xODc1IDE0LjQwNjI1IEwgMTcuOTA2MjUgMTUuNDA2MjUgQyAxNy44MDQ2ODggMTUuNTA3ODEzIDE3LjExMzI4MSAxNi4zMTI1IDE1LjgxMjUgMTYuMzEyNSBDIDE0LjMxMjUgMTYuMzEyNSAxMy4wOTM3NSAxNS41MDc4MTMgMTMuMDkzNzUgMTMuNDA2MjUgTCAxMy4wOTM3NSAxMi45MDYyNSBDIDEzLjA5Mzc1IDEwLjYwNTQ2OSAxNC4yOTI5NjkgOS44MTI1IDE1LjU5Mzc1IDkuODEyNSBaIE0gMTUuNDA2MjUgMTEuMDkzNzUgQyAxNS4xMDU0NjkgMTEuMDkzNzUgMTQuNSAxMS4yMDcwMzEgMTQuNSAxMi40MDYyNSBMIDE2LjE4NzUgMTIuNDA2MjUgQyAxNi4xODc1IDEyLjQwNjI1IDE2LjQwNjI1IDExLjA5Mzc1IDE1LjQwNjI1IDExLjA5Mzc1IFogTSA4LjA5Mzc1IDEyLjUgTCA4LjA5Mzc1IDE0LjgxMjUgTCA5LjE4NzUgMTQuODEyNSBDIDkuNzg5MDYzIDE0LjgxMjUgMTAuMDkzNzUgMTQuMzg2NzE5IDEwLjA5Mzc1IDEzLjY4NzUgQyAxMC4xOTUzMTMgMTIuODg2NzE5IDkuOTE0MDYzIDEyLjUgOS4zMTI1IDEyLjUgWiIvPjwvc3ZnPg=="/></a>
+        <a href="#"><img alt="Dribbble" class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gNCAyIEMgMi44OTg0MzggMiAyIDIuODk4NDM4IDIgNCBMIDIgMjAgQyAyIDIxLjEwMTU2MyAyLjg5ODQzOCAyMiA0IDIyIEwgMjAgMjIgQyAyMS4xMDE1NjMgMjIgMjIgMjEuMTAxNTYzIDIyIDIwIEwgMjIgNCBDIDIyIDIuODk4NDM4IDIxLjEwMTU2MyAyIDIwIDIgWiBNIDEyLjI1IDQgQyAxMy4yNTc4MTMgNCAxNC40Njg3NSA0Ljk4MDQ2OSAxNC40Njg3NSA5LjY1NjI1IEMgMTQuNDY4NzUgMTEuMzI4MTI1IDEzLjk4MDQ2OSAxMy44MTY0MDYgMTMuMDMxMjUgMTUuODEyNSBDIDEzLjQ0NTMxMyAxNi4zNzUgMTMuODM5ODQ0IDE2LjYyNSAxNC4xMjUgMTYuNjI1IEMgMTQuNTExNzE5IDE2LjU0Njg3NSAxNS4zNzg5MDYgMTUuMDAzOTA2IDE1Ljg0Mzc1IDEzLjUzMTI1IEMgMTUuOTcyNjU2IDEzLjEyNSAxNi4zODY3MTkgMTIuOTAyMzQ0IDE2Ljc4MTI1IDEzLjAzMTI1IEMgMTcuMTgzNTk0IDEzLjE0ODQzOCAxNy4zOTg0MzggMTMuNjA1NDY5IDE3LjI4MTI1IDE0IEMgMTYuODg2NzE5IDE1LjI1MzkwNiAxNS43ODUxNTYgMTguMTU2MjUgMTQuMTI1IDE4LjE1NjI1IEMgMTMuNjAxNTYzIDE4LjE1NjI1IDEyLjkyMTg3NSAxNy45MDIzNDQgMTIuMjUgMTcuMjE4NzUgQyAxMS40ODgyODEgMTguMjg1MTU2IDEwLjUyMzQzOCAxOSA5LjQwNjI1IDE5IEMgNy4wNDI5NjkgMTkgNiAxNi44NDc2NTYgNiAxNSBDIDYgMTMuMDM1MTU2IDcuMDAzOTA2IDExLjE4NzUgOS4xODc1IDExLjE4NzUgQyA5LjU1NDY4OCAxMS4xODc1IDkuODkwNjI1IDExLjI2NTYyNSAxMC4xODc1IDExLjM3NSBDIDEwLjE0ODQzOCAxMC44MTI1IDEwLjEyNSAxMC4yMDMxMjUgMTAuMTI1IDkuNTYyNSBDIDEwLjEyNSA5LjUwMzkwNiAxMC4xMjUgNCAxMi4yNSA0IFogTSAxMi4zMTI1IDUuNjI1IEMgMTEuOTk2MDk0IDYuMTc5Njg4IDExLjYyNSA3LjgyNDIxOSAxMS42MjUgOS41NjI1IEMgMTEuNjI1IDExLjQ0MTQwNiAxMS44Mzk4NDQgMTIuODkwNjI1IDEyLjE1NjI1IDEzLjk2ODc1IEMgMTIuNjQwNjI1IDEyLjU4NTkzOCAxMi45Njg3NSAxMS4wMDc4MTMgMTIuOTY4NzUgOS42NTYyNSBDIDEyLjk2ODc1IDcuMTA1NDY5IDEyLjU1MDc4MSA1Ljk4MDQ2OSAxMi4zMTI1IDUuNjI1IFogTSA4LjkwNjI1IDEyLjcxODc1IEMgNy41NTQ2ODggMTIuOTg4MjgxIDcuNTMxMjUgMTUuMTc5Njg4IDcuNTMxMjUgMTUuMjgxMjUgQyA3LjUzMTI1IDE1Ljk0MTQwNiA3LjY5NTMxMyAxNy40Njg3NSA5LjQwNjI1IDE3LjQ2ODc1IEMgMTAuMDY2NDA2IDE3LjQ2ODc1IDEwLjczODI4MSAxNi44NDM3NSAxMS4zMTI1IDE1Ljg3NSBDIDEwLjk2NDg0NCAxNS4yMDMxMjUgMTAuNjQ0NTMxIDE0LjM3MTA5NCAxMC40Mzc1IDEzLjMxMjUgQyAxMC4zODY3MTkgMTMuMjgxMjUgMTAuMzQzNzUgMTMuMjI2NTYzIDEwLjMxMjUgMTMuMTg3NSBDIDEwLjMxMjUgMTMuMTg3NSA5LjgyODEyNSAxMi43MTg3NSA5LjE4NzUgMTIuNzE4NzUgQyA5LjA4NTkzOCAxMi43MTg3NSA4Ljk5NjA5NCAxMi42OTkyMTkgOC45MDYyNSAxMi43MTg3NSBaIi8+PC9zdmc+"/></a>
+    </div>
+    </div>
+    <div class="contact-section">
+      <h4>Contact us</h4>
+      <div class="contact-icons">
+         <a href="#"><img alt="Telegram" class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gMjAuMzAyNzM0IDIuOTg0Mzc1IEMgMjAuMDEzNzY5IDIuOTk2OTQ1IDE5Ljc0ODU4MyAzLjA4MDA1NSAxOS41MTU2MjUgMy4xNzE4NzUgQyAxOS4zMDA0MDcgMy4yNTY2MzQgMTguNTI3NTQgMy41ODE0NzI2IDE3LjI5Njg3NSA0LjA5NzY1NjIgQyAxNi4wNjYyMSA0LjYxMzg0IDE0LjQzNTQ3NiA1LjI5ODIzNDggMTIuNjk3MjY2IDYuMDI5Mjk2OSBDIDkuMjIwODQ0OSA3LjQ5MTQyMTEgNS4zMTQyMzggOS4xMzYxMjU5IDMuMzEyNSA5Ljk3ODUxNTYgQyAzLjI0Mzc1OSAxMC4wMDcxNTYgMi45NjQ1ODUyIDEwLjA5MjYyMSAyLjY1NjI1IDEwLjMyODEyNSBDIDIuMzQ3MTk5NiAxMC41NjQxNzYgMi4wMDM5MDYyIDExLjA3NjQ2MiAyLjAwMzkwNjIgMTEuNjM2NzE5IEMgMi4wMDM5MDYyIDEyLjA4ODY3MSAyLjIyOTUyMDEgMTIuNTQ4OTY2IDIuNTAxOTUzMSAxMi44MTI1IEMgMi43NzQzODYxIDEzLjA3NjAzNCAzLjA1MDQ5MDMgMTMuMTk5MjQ0IDMuMjgxMjUgMTMuMjkxMDE2IEwgMy4yODEyNSAxMy4yODkwNjIgQyA0LjA2MTI3NzYgMTMuNTk5ODI3IDYuMzkwNjkzOSAxNC41MzE5MzggNi45NDUzMTI1IDE0Ljc1MzkwNiBDIDcuMTQyMDQyMyAxNS4zNDM0MzMgNy45ODY1ODk1IDE3Ljg2NzI3OCA4LjE4NzUgMTguNTAxOTUzIEwgOC4xODU1NDY5IDE4LjUwMTk1MyBDIDguMzI3NTU4OCAxOC45NTExNjIgOC40NjU5NzkxIDE5LjI0MzkxMyA4LjY1ODIwMzEgMTkuNDg4MjgxIEMgOC43NTQzMTUxIDE5LjYxMDQ2NSA4Ljg2OTAzOTggMTkuNzIxMTg0IDkuMDA5NzY1NiAxOS44MDg1OTQgQyA5LjA2Mzc1OTYgMTkuODQyMTM0IDkuMTIzNTQ1NCAxOS44NjgxNDggOS4xODM1OTM4IDE5Ljg5MjU3OCBDIDkuMTkxOTYyIDE5Ljg5NjEzMSA5LjIwMDU4NjcgMTkuODk3MDEyIDkuMjA4OTg0NCAxOS45MDAzOTEgTCA5LjE4NTU0NjkgMTkuODk0NTMxIEMgOS4yMDI5NTc5IDE5LjkwMTUzMSA5LjIxODU4NDEgMTkuOTExODU5IDkuMjM2MzI4MSAxOS45MTc5NjkgQyA5LjI2NTI0MjcgMTkuOTI3OTI2IDkuMjg1Mjg3MyAxOS45Mjc1OTkgOS4zMjQyMTg4IDE5LjkzNTU0NyBDIDkuNDYxMjIzMyAxOS45Nzc2OTQgOS41OTc5Nzk0IDIwLjAwNTg1OSA5LjcyNDYwOTQgMjAuMDA1ODU5IEMgMTAuMjY4MjIgMjAuMDA1ODU5IDEwLjYwMTU2MiAxOS43MTA5MzcgMTAuNjAxNTYyIDE5LjcxMDkzOCBMIDEwLjYyMzA0NyAxOS42OTUzMTIgTCAxMi45NzA3MDMgMTcuNzA4OTg0IEwgMTUuODQ1NzAzIDIwLjM2OTE0MSBDIDE1Ljg5ODIxNyAyMC40NDMyODkgMTYuMzA5NjA0IDIxIDE3LjI2MTcxOSAyMSBDIDE3LjgyOTg0NCAyMSAxOC4yNzkwMjUgMjAuNzE4NzkxIDE4LjU2NjQwNiAyMC40MjM4MjggQyAxOC44NTM3ODcgMjAuMTI4ODY2IDE5LjAzMjgwNCAxOS44MjcwNiAxOS4xMTMyODEgMTkuNDE3OTY5IEwgMTkuMTE1MjM0IDE5LjQxNjAxNiBDIDE5LjE3OTQxNCAxOS4wODU4MzQgMjEuOTMxNjQxIDUuMjY1NjI1IDIxLjkzMTY0MSA1LjI2NTYyNSBMIDIxLjkyNTc4MSA1LjI4OTA2MjUgQyAyMi4wMTE0NDEgNC45MDY3MTcxIDIyLjAzNjczNSA0LjUzNjk2MzEgMjEuOTM1NTQ3IDQuMTYwMTU2MiBDIDIxLjgzNDM1OCAzLjc4MzM0OTUgMjEuNTYxMjcxIDMuNDE1NjI1MiAyMS4yMzI0MjIgMy4yMjI2NTYyIEMgMjAuOTAzNTcyIDMuMDI5Njg3NCAyMC41OTE2OTkgMi45NzE4MDQ2IDIwLjMwMjczNCAyLjk4NDM3NSB6IE0gMTkuOTA4MjAzIDUuMTczODI4MSBDIDE5Ljc5OTQ0MiA1LjcxOTg1NzYgMTcuMzM0MDEgMTguMTA1ODc3IDE3LjE4MTY0MSAxOC44ODI4MTIgTCAxMy4wMjkyOTcgMTUuMDQxMDE2IEwgMTAuMjIyNjU2IDE3LjQxNDA2MiBMIDExIDE0LjM3NSBDIDExIDE0LjM3NSAxNi4zNjI1NDcgOC45NDY4NTk0IDE2LjY4NTU0NyA4LjYzMDg1OTQgQyAxNi45NDU1NDcgOC4zNzc4NTk0IDE3IDguMjg5MTcxOSAxNyA4LjIwMTE3MTkgQyAxNyA4LjA4NDE3MTkgMTYuOTM5NzgxIDggMTYuODAwNzgxIDggQyAxNi42NzU3ODEgOCAxNi41MDYwMTYgOC4xMTk3ODEyIDE2LjQxNjAxNiA4LjE3NTc4MTIgQyAxNS4yNzIzNjggOC44ODg3ODU0IDEwLjQwMTI4MyAxMS42NjQ2ODUgOC4wMDU4NTk0IDEzLjAyNzM0NCBDIDcuODYxNzAxNiAxMi45Njk1NCA1LjY5NzM5NjIgMTIuMTAwNDU4IDQuNTMxMjUgMTEuNjM0NzY2IEMgNi42MDU1MTQ2IDEwLjc2MTc3IDEwLjE2MTE1NiA5LjI2NTgwODMgMTMuNDcyNjU2IDcuODczMDQ2OSBDIDE1LjIxMDU3MSA3LjE0MjEwOSAxNi44NDA4MjIgNi40NTcwOTc3IDE4LjA3MDMxMiA1Ljk0MTQwNjIgQyAxOS4xMDgxNTggNS41MDYwOTc3IDE5LjY0OTUzOCA1LjI4MDcwMzUgMTkuOTA4MjAzIDUuMTczODI4MSB6IE0gMTcuMTUyMzQ0IDE5LjAyNTM5MSBDIDE3LjE1MjM0NCAxOS4wMjUzOTEgMTcuMTU0Mjk3IDE5LjAyNTM5MSAxNy4xNTQyOTcgMTkuMDI1MzkxIEMgMTcuMTU0MjUyIDE5LjAyNTYyMSAxNy4xNTI0NDQgMTkuMDMwOTUgMTcuMTUyMzQ0IDE5LjAzMTI1IEMgMTcuMTUzNjE1IDE5LjAyNDc4OSAxNy4xNTEzOSAxOS4wMzA0NSAxNy4xNTIzNDQgMTkuMDI1MzkxIHoiLz48L3N2Zz4="/></a>
+        <a href="#"><img alt="WhatsApp" class="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPiAgICA8cGF0aCBkPSJNMTkuMDc3LDQuOTI4QzE3LjE5MSwzLjA0MSwxNC42ODMsMi4wMDEsMTIuMDExLDJjLTUuNTA2LDAtOS45ODcsNC40NzktOS45ODksOS45ODUgYy0wLjAwMSwxLjc2LDAuNDU5LDMuNDc4LDEuMzMzLDQuOTkyTDIsMjJsNS4yMzMtMS4yMzdjMS40NTksMC43OTYsMy4xMDEsMS4yMTUsNC43NzMsMS4yMTZoMC4wMDQgYzUuNTA1LDAsOS45ODYtNC40OCw5Ljk4OS05Ljk4NUMyMi4wMDEsOS4zMjUsMjAuOTYzLDYuODE2LDE5LjA3Nyw0LjkyOHogTTE2Ljg5OCwxNS41NTRjLTAuMjA4LDAuNTgzLTEuMjI3LDEuMTQ1LTEuNjg1LDEuMTg2IGMtMC40NTgsMC4wNDItMC44ODcsMC4yMDctMi45OTUtMC42MjRjLTIuNTM3LTEtNC4xMzktMy42MDEtNC4yNjMtMy43NjdjLTAuMTI1LTAuMTY3LTEuMDE5LTEuMzUzLTEuMDE5LTIuNTgxIFM3LjU4MSw3LjkzNiw3LjgxLDcuNjg3YzAuMjI5LTAuMjUsMC40OTktMC4zMTIsMC42NjYtMC4zMTJjMC4xNjYsMCwwLjMzMywwLDAuNDc4LDAuMDA2YzAuMTc4LDAuMDA3LDAuMzc1LDAuMDE2LDAuNTYyLDAuNDMxIGMwLjIyMiwwLjQ5NCwwLjcwNywxLjcyOCwwLjc2OSwxLjg1M3MwLjEwNCwwLjI3MSwwLjAyMSwwLjQzN3MtMC4xMjUsMC4yNy0wLjI0OSwwLjQxNmMtMC4xMjUsMC4xNDYtMC4yNjIsMC4zMjUtMC4zNzQsMC40MzcgYy0wLjEyNSwwLjEyNC0wLjI1NSwwLjI2LTAuMTEsMC41MDljMC4xNDYsMC4yNSwwLjY0NiwxLjA2NywxLjM4OCwxLjcyOGMwLjk1NCwwLjg1LDEuNzU3LDEuMTEzLDIuMDA3LDEuMjM5IGMwLjI1LDAuMTI1LDAuMzk1LDAuMTA0LDAuNTQxLTAuMDYzYzAuMTQ2LTAuMTY2LDAuNjI0LTAuNzI4LDAuNzktMC45NzhzMC4zMzMtMC4yMDgsMC41NjItMC4xMjVzMS40NTYsMC42ODcsMS43MDUsMC44MTIgYzAuMjUsMC4xMjUsMC40MTYsMC4xODcsMC40NzgsMC4yOTFDMTcuMTA2LDE0LjQ3MSwxNy4xMDYsMTQuOTcxLDE2Ljg5OCwxNS41NTR6Ii8+PC9zdmc+"/></a>
+        <a href="#"><img alt="Phone" class="icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNTAgNTAiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiPjxwYXRoIGQ9Ik0gMTQgMy45OTAyMzQ0IEMgOC40ODg2NjYxIDMuOTkwMjM0NCA0IDguNDc4OTAwOCA0IDEzLjk5MDIzNCBMIDQgMzUuOTkwMjM0IEMgNCA0MS41MDE1NjggOC40ODg2NjYxIDQ1Ljk5MDIzNCAxNCA0NS45OTAyMzQgTCAzNiA0NS45OTAyMzQgQyA0MS41MTEzMzQgNDUuOTkwMjM0IDQ2IDQxLjUwMTU2OCA0NiAzNS45OTAyMzQgTCA0NiAxMy45OTAyMzQgQyA0NiA4LjQ3ODkwMDggNDEuNTExMzM0IDMuOTkwMjM0NCAzNiAzLjk5MDIzNDQgTCAxNCAzLjk5MDIzNDQgeiBNIDE4LjAwNTg1OSAxMi4wMzMyMDMgQyAxOC42MzM4NTkgMTIuMDYwMjAzIDE5LjIxMDU5NCAxMi40MTQwMzEgMTkuNTU4NTk0IDEyLjk1NzAzMSBDIDE5Ljk1NDU5NCAxMy41NzUwMzEgMjAuNTY5MTQxIDE0LjUzNDE1NiAyMS4zNjkxNDEgMTUuNzg1MTU2IEMgMjIuMDk5MTQxIDE2LjkyNjE1NiAyMi4xNTAwNDcgMTguMzk5ODQ0IDIxLjQ5ODA0NyAxOS41ODk4NDQgTCAyMC4wMzMyMDMgMjEuNjczODI4IEMgMTkuNjM3MjAzIDIyLjIzNzgyOCAxOS41NTgyMTkgMjIuOTU5NzAzIDE5LjgyNDIxOSAyMy41OTU3MDMgQyAyMC4yMzgyMTkgMjQuNTg1NzAzIDIxLjA0MDc5NyAyNi4xMDcyMDMgMjIuNDY2Nzk3IDI3LjUzMzIwMyBDIDIzLjg5Mjc5NyAyOC45NTkyMDMgMjUuNDE0Mjk3IDI5Ljc2MTc4MSAyNi40MDQyOTcgMzAuMTc1NzgxIEMgMjcuMDQwMjk3IDMwLjQ0MTc4MSAyNy43NjIxNzIgMzAuMzYyNzk3IDI4LjMyNjE3MiAyOS45NjY3OTcgTCAzMC40MTAxNTYgMjguNTAxOTUzIEMgMzEuNjAwMTU2IDI3Ljg0OTk1MyAzMy4wNzM4NDQgMjcuOTAxODU5IDM0LjIxNDg0NCAyOC42MzA4NTkgQyAzNS40NjU4NDQgMjkuNDMwODU5IDM2LjQyNDk2OSAzMC4wNDU0MDYgMzcuMDQyOTY5IDMwLjQ0MTQwNiBDIDM3LjU4NTk2OSAzMC43ODk0MDYgMzcuOTM5Nzk3IDMxLjM2NjE0MSAzNy45NjY3OTcgMzEuOTk0MTQxIEMgMzguMTIwNzk3IDM1LjU1ODE0MSAzNS4zNTk2NDEgMzcuMDAxOTUzIDM0LjU1NjY0MSAzNy4wMDE5NTMgQyAzNC4wMDA2NDEgMzcuMDAxOTUzIDI3LjMxNjM0NCAzNy43NjE2NTYgMTkuNzc3MzQ0IDMwLjIyMjY1NiBDIDEyLjIzODM0NCAyMi42ODM2NTYgMTIuOTk4MDQ3IDE1Ljk5OTM1OSAxMi45OTgwNDcgMTUuNDQzMzU5IEMgMTIuOTk4MDQ3IDE0LjY0MDM1OSAxNC40NDE4NTkgMTEuODc5MjAzIDE4LjAwNTg1OSAxMi4wMzMyMDMgeiIvPjwvc3ZnPg=="/></a>
+        <a href="#"><img alt="Email" class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8ElEQVR4nO2YTStFURSGH983kRQTpKSkJGUgE2XATzA1NLj5GMlf8BeMzfwDDGTiY3AjAxlISUoScVHysXVqnbqd9nb2ufdcZ8t+6x2dvdZ63/2xTi3w8PDw8PDQIwcsAofAM6B+mc9Se1G0JEI3cJSBaGVgoKXLVnwjcOyAaKUxEWiLxYIDYpWB8zYGDh0QqgzctzGw5YBQZeAmlphy7B2cAjMkRK0EXWQo/AqYA+qSCI8uDnrwMnD/i8LvpWa0/1sZMR1XO7AKvFZR+BuwBnT+cK1jUfriJzTfe6TIe4rCP4ENoE9TbwzYKVlrbSDkNjCsWTcoRSsVvw2MaPIPSP6vyPrEBpTs9prhdz4O7JYhPPjfTGrydcpVfTPElWUg5IskbzPc0RML4Wfyxmoi8S3ACvAUE1+RgZB3Uiynab2zwLUm5hZYAuojMQ3SKm8sa6diIOSloU83i8EHoCin1hpZE5xAcBLnCWumaiBkAZjW5OoQRjEtMaoMVsVAaUcZ/SH3UAqdKxaqQn6JyP6SnL3SxT5SyB8LlRKDNrguNLVE5bKBajEWWQtU3gDZ77LyV4g//IiLDohUBj7aGDhwQKgycO+vD7byNgaaHJuLKmHBdrTo4nC3kGS4G6JRZpF7GT3sotTOJ9l5Dw8PD4//hW9PcVQiDOoB9wAAAABJRU5ErkJggg=="></a>
+    </div>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms & Conditions</a>
+  </div>
+  <div class="footer-bottom">
+    <p>©2024 InboxPixel creative studio</p>
+  </div>
+</footer>
+<a href="#" class="back-to-top" id="backToTop">
+  ↑
+</a>
+  <!-- <footer>
+    <p>© 2024 Inbox Pixel. All rights reserved.</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

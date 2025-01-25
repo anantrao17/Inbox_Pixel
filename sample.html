@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back to Top</title>
+  <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+  <!-- Content of the page -->
+  <div class="content">
+    <p>Scroll down the page to see the Back to Top button in action...</p>
+    <!-- Add lots of content here for testing -->
+    <div style="height: 2000px; background: #222;"></div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-section">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="x-icon.svg" alt="X"></a>
+          <a href="#"><img src="instagram-icon.svg" alt="Instagram"></a>
+          <a href="#"><img src="facebook-icon.svg" alt="Facebook"></a>
+          <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+          <a href="#"><img src="behance-icon.svg" alt="Behance"></a>
+        </div>
+      </div>
+      <div class="contact-section">
+        <h4>Contact us</h4>
+        <div class="contact-icons">
+          <a href="#"><img src="telegram-icon.svg" alt="Telegram"></a>
+          <a href="#"><img src="phone-icon.svg" alt="Phone"></a>
+          <a href="#"><img src="call-icon.svg" alt="Call"></a>
+          <a href="#"><img src="email-icon.svg" alt="Email"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms & Conditions</a>
+    </div>
+    <div class="footer-bottom">
+      <p>©2024 creedz creative studio</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+    ↑
+  </a>
+
+  <script>
+    // Optional: Smooth scroll back to top
+    document.getElementById('backToTop').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

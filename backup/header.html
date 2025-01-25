@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Header Example</title>
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./logo with text2.svg" alt="Nothing">
+    </div>
+    <nav class="nav-links">
+      <a href="#Home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#contact">Let's talk</a>
+    </nav>
+    <div class="header-buttons">
+      <button class="toggle-theme" onclick="toggleTheme()">
+        🌞
+      </button>
+      <button class="book-call">Book a call</button>
+    </div>
+  </header>
+
+  <div class="animated-background"></div>
+
+  <div class="center-message" id="centerMessage">
+    <h1 id="dynamicMessage"></h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

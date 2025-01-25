@@ -1,0 +1,233 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Figtree', sans-serif;
+    background-color: #ffffff;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #333; 
+    border-radius: 20px;
+    margin: 20px auto; 
+    max-width: 1400px; 
+  }
+  
+  .logo img{
+    width: 100px; 
+    height:auto;
+  }
+  .logo_name{
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    padding-left: 120px;
+  }
+  .nav-links a {
+    padding: 10px 10px;
+    display: block;
+}
+  
+  .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500; 
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ac8257;
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .toggle-theme,
+  .book-call,
+  .star-icon {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 8px 14px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .book-call {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 6px 16px; 
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .book-call:hover {
+    background-color: #000000; 
+    color: #fff; 
+  }
+  
+  .toggle-theme:hover,
+  .star-icon:hover {
+    color: #ff4b4b; 
+  }
+
+.center-message {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.center-message h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#dynamicMessage {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Position the animated background behind other elements */
+.animated-background {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Behind the main content */
+  pointer-events: none; /* Prevent interaction */
+  /* background: #ffffff; */
+}
+
+/* Circle styles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2); /* Faded black */
+  animation: fade-circle 4s ease-in-out infinite;
+  opacity: 0; /* Start as invisible */
+}
+
+
+/* Define the fade and growth animation */
+@keyframes fade-circle {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .center-message h1 {
+    font-size: 1.5rem; /* Smaller font size to fit in one line */
+  }
+}
+
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+      padding: 5px 0;
+    }
+  
+    .header-buttons {
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .book-call {
+      padding: 5px 14px;
+    }
+  }
+
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.1rem;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 0.9rem;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .book-call {
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+    }
+  }
+  

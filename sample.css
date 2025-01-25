@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensures the button is above other content */
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .back-to-top:hover {
+    background-color: #666;
+    transform: scale(1.1);
+  }
+  
+  .back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Optional Footer Styling */
+  .footer {
+    background-color: #867b7b;
+    padding: 20px;
+    color: #ccc;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .social-icons img,
+  .contact-icons img {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .social-icons img:hover,
+  .contact-icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
