@@ -1,4 +1,5 @@
 {
     "editor.folding": false,
-    "editor.foldingHighlight": false
+    "editor.foldingHighlight": false,
+    "liveServer.settings.multiRootWorkspaceName": "main"
 }
